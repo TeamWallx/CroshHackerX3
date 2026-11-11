@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X3 // CROSH TERMINAL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="glitch-header">
+            <h1 class="glitch" data-text="[ X3 // CROSH CONSOLE ]">[ X3 // CROSH CONSOLE ]</h1>
+            <p class="subtitle">CHROME OS COMMAND ENVIRONMENT | NODE: 0x3_LOCAL</p>
+        </header>
+
+        <!-- Main Terminal Window -->
+        <main class="terminal">
+            <div class="terminal-bar">
+                <div class="buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">crosh@X3-OS:~</div>
+            </div>
+            
+            <div class="terminal-body" id="terminal-output">
+                <p><span class="prompt">crosh></span> Welcome to X3 Crosh Simulator.</p>
+                <p class="sys-msg">Type <span class="highlight">'help'</span> or <span class="highlight">'help_advanced'</span> to list available commands.</p>
+                
+                <div class="input-line">
+                    <span class="prompt">crosh></span>
+                    <input type="text" id="command-input" autofocus autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </main>
+
+        <!-- Project Cards / Info Section -->
+        <section class="cards-grid">
+            <div class="card">
+                <h3>// CROSH SYSTEM</h3>
+                <p>Simulating ChromeOS terminal commands, system logs, memory diagnostics, and network tests.</p>
+            </div>
+            <div class="card">
+                <h3>// DEV COMMANDS</h3>
+                <p>Type <code>shell</code>, <code>packet_capture</code>, or <code>evtest</code> for developer tools.</p>
+            </div>
+            <div class="card">
+                <h3>// SYSTEM DIAGNOSTICS</h3>
+                <p>Run <code>memtest</code>, <code>battery_test</code>, or <code>top</code> to monitor system health.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>X3 SYSTEM WORKSPACE &copy; 2026 // ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
